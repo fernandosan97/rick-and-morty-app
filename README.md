@@ -1,3 +1,7 @@
+# Rick and Morty App - React
+
+This project is developed with react js, request http with fetch API and async / await.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
