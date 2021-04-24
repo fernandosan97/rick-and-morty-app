@@ -1,60 +1,25 @@
-import { useEffect, useState } from 'react';
-import './App.css';
-import CardList from './components/CardList';
+import Home from './pages/Home';
+import Episodes from './pages/Episodes';
+import CharacterDetail from './pages/CharacterDetail';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Nav from './components/Nav';
-import Hero from './components/Hero';
-import Loader from './components/Loader';
 
 function App() {
-  const [characters, setCharacters] = useState([]);
-  const [search, setSearch] = useState('');
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(true);
-  
-  /* eslint-disable react-hooks/exhaustive-deps */
-  useEffect(() => {
-    getCharacters();
-  }, [search]);
-  
-  const getCharacters = async () => {
-    let url = 'https://rickandmortyapi.com/api/character';
-
-    if(search){
-      url = `${url}?name=${search}`;
-    }
-
-    setLoading(true);
-    try {
-      const response = await fetch(url);
-      const data = await response.json();
-
-      data.results ? setCharacters(data.results) : setCharacters([]);
-      setError(false);
-    } catch (error) {
-      console.log("Error: " + error);
-      setError(true);
-    }
-
-    setLoading(false);
-  }
-
-  const handleSearch = (e) => {
-    setSearch(e.target.value);
-  }
-
   return (
-    <>
+    <Router>
       <Nav />
-      <Hero handleSearch={handleSearch} />
-      <div className="container">
-        {
-          error ? 
-            <div className="error">There are results!</div>
-          :
-            (loading ? <Loader /> : <CardList characters={characters} />)
-        }
-      </div>
-    </>
+      <Switch>
+      <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/about">
+          <Episodes />
+        </Route>
+        <Route exact path="/character/detail/:id">
+          <CharacterDetail />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

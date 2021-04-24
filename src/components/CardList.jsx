@@ -5,10 +5,10 @@ const CardList = ({characters}) => {
     return (
         <div className="card__container">
             { 
-                characters ?
+                characters.length > 0 ?
                     characters.map(character => <Card character={character} key={character.id} />)
                 :
-                    <h1>No hay resultados</h1>
+                    <div className="error">There are not results!</div>
             }
         </div>
     )

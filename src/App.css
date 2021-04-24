@@ -17,6 +17,10 @@ body {
   margin: 0 auto;
 }
 
+.container--modifier {
+  margin-top: 20px;
+}
+
 .container__nav {
   max-width: 1440px;
   width: 90%;
@@ -27,7 +31,7 @@ body {
   align-items: center;
 }
 
-.container__nav > img {
+.container__nav > a > img {
   height: 60px;
 }
 
@@ -163,6 +167,48 @@ p {
   transition: ease 1s;
 }
 
+a {
+  color: #FFF;
+}
+
+.card-detail {
+  width: 60%;
+  height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, .5);
+  background-color: #4a8394;
+  color: #FFF;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-detail__image {
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card-detail__image > img {
+  object-fit: cover;
+  object-position: top;
+}
+
+.card-detail__body {
+  width: 60%;
+  padding: 20px;
+}
+
+.card-detail__body > h2 {
+  font-size: 34px;
+}
+
+.card-detail__body > p {
+  font-size: 24px;
+}
+
+
 @media screen and (max-width: 1100px) {
   .container {
     width: 95%;
@@ -213,7 +259,7 @@ p {
   text-align: center;
   font-size: 30px;
   font-weight: 300;
-  width: 300px;
+  width: 350px;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.5);
   margin-top: 20px;
