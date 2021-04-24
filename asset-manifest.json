@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/rick-and-morty-app/static/css/main.af25335f.chunk.css",
-    "main.js": "/rick-and-morty-app/static/js/main.492f54a7.chunk.js",
-    "main.js.map": "/rick-and-morty-app/static/js/main.492f54a7.chunk.js.map",
-    "runtime-main.js": "/rick-and-morty-app/static/js/runtime-main.90bea2fb.js",
-    "runtime-main.js.map": "/rick-and-morty-app/static/js/runtime-main.90bea2fb.js.map",
-    "static/js/2.9f928d0b.chunk.js": "/rick-and-morty-app/static/js/2.9f928d0b.chunk.js",
-    "static/js/2.9f928d0b.chunk.js.map": "/rick-and-morty-app/static/js/2.9f928d0b.chunk.js.map",
-    "static/js/3.31fb2a87.chunk.js": "/rick-and-morty-app/static/js/3.31fb2a87.chunk.js",
-    "static/js/3.31fb2a87.chunk.js.map": "/rick-and-morty-app/static/js/3.31fb2a87.chunk.js.map",
-    "index.html": "/rick-and-morty-app/index.html",
-    "static/css/main.af25335f.chunk.css.map": "/rick-and-morty-app/static/css/main.af25335f.chunk.css.map",
-    "static/js/2.9f928d0b.chunk.js.LICENSE.txt": "/rick-and-morty-app/static/js/2.9f928d0b.chunk.js.LICENSE.txt",
-    "static/media/logo.df73b7db.png": "/rick-and-morty-app/static/media/logo.df73b7db.png"
+    "main.css": "./static/css/main.bf26b921.chunk.css",
+    "main.js": "./static/js/main.6fe04e76.chunk.js",
+    "main.js.map": "./static/js/main.6fe04e76.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.5be4588f.js",
+    "runtime-main.js.map": "./static/js/runtime-main.5be4588f.js.map",
+    "static/js/2.501105f2.chunk.js": "./static/js/2.501105f2.chunk.js",
+    "static/js/2.501105f2.chunk.js.map": "./static/js/2.501105f2.chunk.js.map",
+    "static/js/3.119ba24f.chunk.js": "./static/js/3.119ba24f.chunk.js",
+    "static/js/3.119ba24f.chunk.js.map": "./static/js/3.119ba24f.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.bf26b921.chunk.css.map": "./static/css/main.bf26b921.chunk.css.map",
+    "static/js/2.501105f2.chunk.js.LICENSE.txt": "./static/js/2.501105f2.chunk.js.LICENSE.txt",
+    "static/media/logo.df73b7db.png": "./static/media/logo.df73b7db.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.90bea2fb.js",
-    "static/js/2.9f928d0b.chunk.js",
-    "static/css/main.af25335f.chunk.css",
-    "static/js/main.492f54a7.chunk.js"
+    "static/js/runtime-main.5be4588f.js",
+    "static/js/2.501105f2.chunk.js",
+    "static/css/main.bf26b921.chunk.css",
+    "static/js/main.6fe04e76.chunk.js"
   ]
 }
